@@ -1,1 +1,684 @@
-Hello, world !
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://registry.jsonresume.org/ariel-costescu?theme=paper -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Ariel Costescu</title>
+  <script type="text/javascript" async="" src="./index_files/analytics.js.download"></script><script src="./index_files/QEWNwoPSl2O5LqMXvi595gsiMPg.js.download"></script><script src="./index_files/js"></script><link href="./index_files/css" rel="stylesheet" type="text/css">
+  <link href="./index_files/css(1)" rel="stylesheet" type="text/css">
+  <style>body, html {
+  padding-top:2.5em;
+  margin:0;
+  background-color:#fafafa;
+}
+
+.note {
+  display:block;
+  position: absolute;
+  top:10px;
+  left:10px;
+
+  font-family: "Open Sans";
+  font-size: 0.6em;
+}
+
+.new {
+  background-color: #81C784;
+
+  border: 1px solid #757575;
+  padding: 1px;
+  border-radius: 4px;
+
+}
+
+/* Header */
+
+header {
+  width:100%;
+  vertical-align: middle;
+  text-align: center;
+ 
+}
+
+.header-content {
+  display: inline-block;
+}
+
+.pic {
+  margin: 0 auto;
+  margin-top:-2.5em;
+  
+  border-radius:10em;
+  height:4em;
+  width:4em;
+  
+  border: 2px solid #e0e0e0;
+  transition : all 0.5s linear;
+  
+}
+
+@-webkit-keyframes wiggle {
+  0%   {
+    transform: rotate(0deg);
+  }
+  25%  {
+    transform: rotate(-30deg);
+  }
+  50%  {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.pic:hover {
+  /*Webkit fix*/
+  -webkit-transform: translateZ(0);
+  
+  cursor:pointer;
+  
+  -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.header-text {
+  margin-top:0.5em;
+  margin-left:1em;
+}
+
+header p {
+  text-align:center;
+  font-family: "Merriweather";
+  
+  margin:0;
+  
+  color: #212121;
+}
+
+.first-name {
+   font-size: 1.05em;
+}
+
+.subtitle {
+  font-family: "Merriweather";
+  padding-top:.3em;
+  font-size:0.55em;
+  font-weight:500;
+  color: #424242;
+}
+
+/* Information */
+
+.paper {
+  margin: 0 auto;
+  margin-bottom:1em;
+  
+  background-color:white;
+  width:60%;
+  
+  padding:0.5em 0 0.5em 0;
+  
+  border-top: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 3px solid #e0e0e0;
+  border-radius:3px;
+}
+
+@media(max-width:992px) {
+  .paper {
+    width:80%;
+  }
+}
+
+/* Content Part */
+
+.content-wrapper {
+  padding-right:7.25%;
+}
+
+.content {
+  display:table;
+  width:100%;
+  
+  padding-top:1.5em;
+  
+  /*border-top: 1px solid #eeeeee;*/
+}
+
+.content:last-child {
+  margin-bottom: 2em;
+}
+
+body > div > article > div > section:last-child {
+  padding-bottom:1.5em;
+}
+
+.row {
+    display:table-row;
+}
+.row div {
+    display:table-cell;
+}
+
+.content-cat {
+  font-family: "Merriweather";
+  font-variant:small-caps;
+  font-weight:300;
+  letter-spacing: 1px;
+  
+  color: #212121;
+  
+  font-size:0.975em;
+  
+  text-align:center;
+  vertical-align:middle;
+
+  padding-left:6.66%;
+  width:30%;
+}
+
+.content-cat p {
+  font-size:0.55em;
+  font-weight:600;
+  
+  margin-bottom:0;
+}
+
+.content-text {
+  border-left:1px solid #e0e0e0;
+  transition: border 0.66s ease-in;
+}
+
+.big-text {
+  vertical-align:top;
+}
+
+.content-text ul {
+  padding:0;
+  margin:0;
+  margin-top:0.15em;
+  
+  width:85%;
+  margin-left:1.5em;
+}
+
+.content-text ul:last-child {
+  margin-bottom:0.5em;
+}
+
+.content-text ul li {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  
+  display:inline-block;
+  
+}
+
+.content-text ul li:first-child {
+  width:35%;
+  
+  color: #424242;
+  
+  font-weight:600;
+}
+
+.content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
+  text-decoration: none;
+  color: #0277bd;
+}
+
+.content-text ul li a:hover {
+  color:#4fc3f7;
+}
+
+.work-listing p {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  
+  color: #424242;
+  
+  margin-left:2em;
+  margin-top:0.45em;
+  margin-bottom: 0.45em;
+}
+
+div.content-text.work-listing.education-listing > p:nth-child(2) {
+  margin-top:0.25em;
+}
+
+.work-listing .highlight {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  font-weight:400;
+  
+  color: #424242;
+  
+  margin-left:3.25em;
+  padding-left:0.5em;
+  
+  border-left:1px solid #e0e0e0;
+  
+}
+
+.education-listing > .heading {
+  font-weight:600;
+  
+  margin-top:0.75em;
+  margin-left:2em;
+}
+
+.education-listing > .highlight {
+  margin-left:3.25em;
+}
+
+.highlight {
+  transition: border .33s ease-in;
+}
+
+.profiles-listing ul li, .profiles-listing ul li:first-child {
+  width:32%;
+  font-weight: normal;
+}
+
+.work-content, .education-content {
+  padding-top: .75em;
+}
+
+section.content.education-content > div > div.content-cat {
+  vertical-align: top;
+}
+
+div.content-text.skills-listing > p {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  font-weight:400;
+
+  margin-left: 2em;
+  margin-top: 0.45em;
+  margin-bottom: 0.45em;
+}
+
+div.content-text.skills-listing > p > {
+  color:#212121;
+}
+
+@media screen and (max-width: 600px) {
+  body, html {
+    padding-top: 30px;
+  }
+
+  .paper {
+    width:95%;
+  }
+
+  .row div {
+    display: block;
+  }
+
+  .content-cat {
+    width: 100%;
+  }
+
+  .content-text ul li {
+    width: 100%;
+  }
+
+  .content-text ul li:first-child {
+    width: 100%;
+  }
+  
+  .education-listing > .highlight {
+    margin-left: 30px;
+  }
+}</style>
+  <style media="print">
+body, html {
+  background-color: white;
+  padding-top: 1.5em;
+}
+
+.paper {
+  width:100%;
+  border: 0;
+
+  padding-top: 0;
+}
+
+header p {
+  font-size: 1.3em;
+}
+
+.subtitle {
+  font-size: 0.7em;
+}
+
+.header-pic {
+  float:left;
+}
+
+.profiles {
+  display:none;
+}
+
+.content {
+  page-break-inside:avoid; 
+  page-break-after:auto;
+}
+
+.header-text {
+  float:left;
+  margin-top: -1.6em;
+}
+
+.content-wrapper > .content:first-child {
+  padding-top: 2em;
+}
+
+.content:last-child {
+  padding-bottom: 0;
+}
+
+.content-cat {
+  width:33%;
+  color:black;
+  text-align: left;
+}
+
+.content-cat p {
+  font-size:0.6em;
+  font-weight: 600;
+}
+
+header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
+  color:black;
+}
+
+.content-text.skills-listing > ul > li span, .subtitle {
+  color:#212121;
+}
+
+.content-text ul:last-child {
+  margin-bottom: 0.25em;
+}
+
+.content-text ul li:first-child {
+  width:50%;
+}
+
+.profiles-listing ul li:first-child {
+  width:32%;
+}
+
+div.content-text.skills-listing > ul > li {
+  width:33%;
+}
+
+.work-listing p {
+  margin-bottom: 0.1em;
+}
+
+div.content-text.skills-listing > ul > li > p {
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+}
+
+div.content-text.skills-listing > ul > li {
+  padding-left: 1.5em;
+}
+
+div.content-text.skills-listing > ul > li:first-child {
+  padding-left: 2em;
+}
+
+.note {
+  display:none;
+}
+
+.content-text:hover {
+  border-left:1px solid #eeeeee;
+}
+
+.content-text ul li a:hover {
+  color:#4fc3f7;
+}
+
+.highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
+  border-left:1px solid #eeeeee;
+}
+
+.big-text {
+  padding-top: 0;
+}</style>
+</head>
+<body>
+  <div class="resume-wrapper">
+    <article class="paper">
+        <header>
+          <div class="header-content">
+              <div class="header-pic">
+                <img src="./index_files/3368121" class="pic">
+              </div>
+            <div class="header-text">
+              <p>
+                Ariel Costescu
+              </p>
+              <p class="subtitle">Software Engineer</p>
+            </div>
+          </div>
+        </header>
+        <div class="content-wrapper">
+          <!-- CONTACT -->
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Contact
+              </div>
+              <div class="content-text">
+                  <ul>
+                    <li>Website</li>
+                    <li>cutt.ly/ariel-costescu</li>
+                  </ul>
+                  <ul>
+                    <li>Email</li>
+                    <li>ariel.costescu+contact@gmail.com</li>
+                  </ul>
+              </div>
+            </div>
+          </section>
+          <!-- LOCATION -->
+        
+                <section class="content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                        Work  Experience
+                          <p>2014-06-01 till 2019-08-01</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p style="margin-top:2.4em;">
+                            <strong>Software Engineer</strong>
+                            at <strong>Electronic Arts:</strong>
+                        </p>
+                        <p>Worked on providing online services for several sports titles running on a variety of platforms: console, PC, mobile.</p>
+                          <p class="highlight">Involved in feature development with end-to-end ownership, from design to deployment in a highly available live environment.</p>
+                          <p class="highlight">Valuable experience in developing successful products with reach on the order of millions DAU.</p>
+                          <p class="highlight">Key technologies: Java, Apache Jetty/Jersey, MySQL, Google Guice, Guava, Protocol Buffers, Cloud Computing (AWS), Actor Model (Akka/Scala), Websockets</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2012-05-01 till 2014-06-01</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                            <strong>Software Engineer</strong>
+                            at <strong>IBM:</strong>
+                        </p>
+                        <p>Worked on several IBM projects as a Java developer.</p>
+                          <p class="highlight">Worked within an international team responsible for managing the build process of an internal IBM application deployed worldwide.</p>
+                          <p class="highlight">Involved in a short-term project for an insurance company, looking to expose a set of business rules, implemented in Websphere ODM, through a Java SOAP Web Service.</p>
+                          <p class="highlight">Implemented views for a banking application using an internal Java framework, based on SWT.</p>
+                          <p class="highlight">Key technologies: Java SE, Eclipse SWT, OSGI, Serena Dimensions, XML, Apache Ant, Jazz SCM, Websphere Application Server, SOAP, JAX-WS</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2010-12-01 till 2012-05-01</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                            <strong>Software Engineer</strong>
+                            at <strong>Red Point Software Solutions:</strong>
+                        </p>
+                        <p>Worked on a commercial software solution, doing both frontend and backend development.</p>
+                          <p class="highlight">Worked on an e-learning application, developing custom components to be used for a non-conventional 3D graphical user interface using Actionscript 3 and Flex 4.5.</p>
+                          <p class="highlight">Developed and maintained an automated build system using Apache Maven and FlexMojos.</p>
+                          <p class="highlight">Integrated third party components (e.g. an open-source MathML formula editor).</p>
+                          <p class="highlight">Mentored junior team members.</p>
+                          <p class="highlight">Key technologies: Flex, AS3, Java EE, Spring, Hibernate, Apache Tomcat</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2009-03-01 till 2010-12-01</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                            <strong>Software Engineer</strong>
+                            at <strong>Kabinet:</strong>
+                        </p>
+                        <p>Worked on several internal software solutions, doing both frontend and backend development</p>
+                          <p class="highlight">Worked on an ECM application written in Flex and Java that allowed version control, metadata, keyword indexing, workflow, preview and messaging.</p>
+                          <p class="highlight">Worked on an MVC framework that was designed to reduce the development and maintenance time of business applications written in Flex and using Java EE (Spring, Hibernate, Tomcat) as the backend.</p>
+                          <p class="highlight">Worked on a CRM application built using the previously mentioned framework. Also supported integration with the content management application.</p>
+                          <p class="highlight">Worked on a mobile application that allowed a user to access an online trading platform written in ActionScript and targeted for smartphones that supported the Flash Lite runtime.</p>
+                          <p class="highlight">Key technologies: Flex, AS3, Java EE, Spring, Hibernate, Apache Tomcat</p>
+                    </div>
+                  </div>
+                </section>
+
+
+                <section class="content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                        Education
+                          <p>2006-10-01 till 2009-10-01</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p class="heading" style="margin-top:2.35em;">"Alexandru Ioan Cuza" University, Iasi, Romania</p>
+                        <p class="highlight">
+                          BSc:
+                          <i>Computer Science </i>
+                        </p>
+                    </div>
+                  </div>
+                </section>
+
+              <section class="content">
+                <div class="row">
+                  <div class="content-cat big-text">
+                      Awards
+                      <p>Oracle Certified Professional, Java SE 6 Programmer</p>
+                      <p style="margin-top:0.25em;">2013-09-01</p>
+                  </div>
+                  <div class="content-text work-listing">
+                      <strong><p class="heading">Oracle</p></strong>
+                      <p class="highlight">https://www.youracclaim.com/badges/7e74183a-c76c-43c4-9f6d-757434f8988b</p>
+                  </div>
+                </div>
+              </section>
+              <section class="content">
+                <div class="row">
+                  <div class="content-cat big-text">
+                      <p>Codility Golden Certificate Omega 2013</p>
+                      <p style="margin-top:0.25em;">2013-11-01</p>
+                  </div>
+                  <div class="content-text work-listing">
+                      <strong><p class="heading">Codility</p></strong>
+                      <p class="highlight">https://app.codility.com/cert/view/cert8N6UY9-X326QVXAFQ7Z293Q/</p>
+                  </div>
+                </div>
+              </section>
+
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Skills
+              </div>
+              <div class="content-text skills-listing">
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Backend Development
+                        </strong>
+                    </span>
+                      <span>(Experienced):</span>
+                      RESTful APIs, Relational Databases, Distributed Computing
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Computer Science
+                        </strong>
+                    </span>
+                      <span>(Experienced):</span>
+                      Algorithms, Data Structures, Concurrency Patterns
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Software Engineering
+                        </strong>
+                    </span>
+                      <span>(Experienced):</span>
+                      Clean Code, TDD, Design Patterns
+                  </p>
+              </div>
+            </div>
+          </section>
+
+  <!-- LANGUAGE -->
+            <section class="content">
+              <div class="row">
+                <div class="content-cat">
+                  Languages
+                </div>
+                <div class="content-text">
+                    <ul>
+                        <li>English</li>
+                        <li>Fluent</li>
+                    </ul>
+                </div>
+              </div>
+            </section>
+            <!-- PROFILES -->
+              <section class="content profiles">
+                <div class="row">
+                  <div class="content-cat">
+                    Profiles
+                  </div>
+                  <div class="content-text profiles-listing">
+                    <ul>
+                          <li>
+                            <a href="https://linkedin.com/in/ariel-costescu" target="_blank">
+                              LinkedIn
+                            </a>
+                          </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+
+        </div>
+    </article>
+  </div>
+
+
+<div class="inject-journal" style="text-align: center; position: relative; z-index: 2147483647;"><div style="position: fixed; width: 0px; height: 0px; top: 0px; right: 0px;"><div style="position: fixed; inset: 0px; visibility: hidden; transform: translateX(464px); transition: transform 100ms cubic-bezier(0, 0, 0, 1) 0s, visibility 100ms ease 0s; will-change: transform, visibility;"><iframe frameborder="0" src="./index_files/inject.html" style="width: 100%; height: 100%; display: block;"></iframe></div></div></div></body></html>
