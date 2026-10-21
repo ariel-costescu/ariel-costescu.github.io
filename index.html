@@ -1,738 +1,221 @@
-<!DOCTYPE html>
-<!-- saved from url=(0058)https://registry.jsonresume.org/ariel-costescu?theme=paper -->
-<html xmlns="http://www.w3.org/1999/html"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-  <title>Ariel Costescu</title>
-  <script type="text/javascript" async="" src="./index_files/analytics.js.download"></script><script src="./index_files/QEWNwoPSl2O5LqMXvi595gsiMPg.js.download"></script><script src="./index_files/js"></script><link href="./index_files/css" rel="stylesheet" type="text/css">
-  <link href="./index_files/css(1)" rel="stylesheet" type="text/css">
-  <style>body, html {
-  padding-top:2.5em;
-  margin:0;
-  background-color:#fafafa;
-}
-
-.note {
-  display:block;
-  position: absolute;
-  top:10px;
-  left:10px;
-
-  font-family: "Open Sans";
-  font-size: 0.9em;
-}
-
-.new {
-  background-color: #81C784;
-
-  border: 1px solid #757575;
-  padding: 1px;
-  border-radius: 4px;
-
-}
-
-/* Header */
-
-header {
-  width:100%;
-  vertical-align: middle;
-  text-align: center;
- 
-}
-
-.header-content {
-  display: inline-block;
-}
-
-.pic {
-  margin: 0 auto;
-  margin-top:-2.5em;
-  
-  border-radius:10em;
-  height:4em;
-  width:4em;
-  
-  border: 2px solid #e0e0e0;
-  transition : all 0.5s linear;
-  
-}
-
-@-webkit-keyframes wiggle {
-  0%   {
-    transform: rotate(0deg);
-  }
-  25%  {
-    transform: rotate(-30deg);
-  }
-  50%  {
-    transform: rotate(15deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.pic:hover {
-  /*Webkit fix*/
-  -webkit-transform: translateZ(0);
-  
-  cursor:pointer;
-  
-  -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-}
-
-.header-text {
-  margin-top:0.5em;
-  margin-left:1em;
-}
-
-header p {
-  text-align:center;
-  font-family: "Merriweather";
-  
-  margin:0;
-  
-  color: #212121;
-}
-
-.first-name {
-   font-size: 1.35em;
-}
-
-.subtitle {
-  font-family: "Merriweather";
-  padding-top:.3em;
-  font-size:0.85em;
-  font-weight:500;
-  color: #424242;
-}
-
-/* Information */
-
-.paper {
-  margin: 0 auto;
-  margin-bottom:1em;
-  
-  background-color:white;
-  width:60%;
-  
-  padding:0.5em 0 0.5em 0;
-  
-  border-top: 1px solid #e0e0e0;
-  border-left: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
-  border-bottom: 3px solid #e0e0e0;
-  border-radius:3px;
-}
-
-@media(max-width:992px) {
-  .paper {
-    width:80%;
-  }
-}
-
-/* Content Part */
-
-.content-wrapper {
-  padding-right:7.25%;
-}
-
-.content {
-  display:table;
-  width:100%;
-  
-  padding-top:1.5em;
-  
-  /*border-top: 1px solid #eeeeee;*/
-}
-
-.content:last-child {
-  margin-bottom: 2em;
-}
-
-body > div > article > div > section:last-child {
-  padding-bottom:1.5em;
-}
-
-.row {
-    display:table-row;
-}
-.row div {
-    display:table-cell;
-}
-
-.content-cat {
-  font-family: "Merriweather";
-  font-variant:small-caps;
-  font-weight:300;
-  letter-spacing: 1px;
-  
-  color: #212121;
-  
-  font-size:1.275em;
-  
-  text-align:center;
-  vertical-align:middle;
-
-  padding-left:6.66%;
-  width:30%;
-}
-
-.content-cat p {
-  font-size:0.85em;
-  font-weight:600;
-  
-  margin-bottom:0;
-}
-
-.content-text {
-  border-left:1px solid #e0e0e0;
-  transition: border 0.66s ease-in;
-}
-
-.big-text {
-  vertical-align:top;
-}
-
-.content-text ul {
-  padding:0;
-  margin:0;
-  margin-top:0.15em;
-  
-  width:85%;
-  margin-left:1.5em;
-}
-
-.content-text ul:last-child {
-  margin-bottom:0.5em;
-}
-
-.content-text ul li {
-  font-family: "Open Sans";
-  font-size:1em;
-  
-  display:inline-block;
-  
-}
-
-.content-text ul li:first-child {
-  width:35%;
-  
-  color: #424242;
-  
-  font-weight:600;
-}
-
-.content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
-  text-decoration: none;
-  color: #0277bd;
-}
-
-.content-text ul li a:hover {
-  color:#4fc3f7;
-}
-
-.work-listing p {
-  font-family: "Open Sans";
-  font-size:1em;
-  
-  color: #424242;
-  
-  margin-left:2em;
-  margin-top:0.45em;
-  margin-bottom: 0.45em;
-}
-
-div.content-text.work-listing.education-listing > p:nth-child(2) {
-  margin-top:0.25em;
-}
-
-.work-listing .highlight {
-  font-family: "Open Sans";
-  font-size:1em;
-  font-weight:400;
-  
-  color: #424242;
-  
-  margin-left:3.25em;
-  padding-left:0.5em;
-  
-  border-left:1px solid #e0e0e0;
-  
-}
-
-.education-listing > .heading {
-  font-weight:600;
-  
-  margin-top:0.75em;
-  margin-left:2em;
-}
-
-.education-listing > .highlight {
-  margin-left:3.25em;
-}
-
-.highlight {
-  transition: border .33s ease-in;
-}
-
-.profiles-listing ul li, .profiles-listing ul li:first-child {
-  width:32%;
-  font-weight: normal;
-}
-
-.work-content, .education-content {
-  padding-top: .75em;
-}
-
-section.content.education-content > div > div.content-cat {
-  vertical-align: top;
-}
-
-div.content-text.skills-listing > p {
-  font-family: "Open Sans";
-  font-size:1em;
-  font-weight:400;
-
-  margin-left: 2em;
-  margin-top: 0.45em;
-  margin-bottom: 0.45em;
-}
-
-div.content-text.skills-listing > p > {
-  color:#212121;
-}
-
-@media screen and (max-width: 600px) {
-  body, html {
-    padding-top: 30px;
-  }
-
-  .paper {
-    width:95%;
-  }
-
-  .row div {
-    display: block;
-  }
-
-  .content-cat {
-    width: 100%;
-  }
-
-  .content-text ul li {
-    width: 100%;
-  }
-
-  .content-text ul li:first-child {
-    width: 100%;
-  }
-  
-  .education-listing > .highlight {
-    margin-left: 30px;
-  }
-}</style>
-    <style media="print">
-        body, html {
-          background-color: white;
-          padding-top: 1.5em;
-        }
-
-        .paper {
-          width: 100%;
-          border: 0;
-          padding-top: 0;
-        }
-
-        header p {
-          font-size: 1.6em;
-          color: black;
-        }
-
-        .subtitle {
-          font-size: 1em;
-          color: #212121;
-        }
-
-        .header-pic {
-          float: left;
-        }
-
-        .header-text {
-          float: left;
-          margin-top: -1.6em;
-        }
-
-        /* Clear floats to prevent layout overlap */
-        .content-wrapper > .content:first-child {
-          clear: both;
-          padding-top: 2em;
-        }
-
-        .profiles {
-          display: none;
-        }
-
-        .note {
-          display: none;
-        }
-
-        .content {
-          page-break-inside: avoid;
-          page-break-after: auto;
-        }
-
-        .content-cat {
-          width: 33%;
-          color: black;
-          text-align: left;
-          vertical-align: top;
-        }
-
-        .content-cat p {
-          font-size: 0.75em;
-          font-weight: 600;
-        }
-
-        .content-text,
-        .work-listing p,
-        .work-listing .highlight {
-          color: black;
-        }
-
-        /* FIX: Ensure Contact elements stay on one row */
-        .content-text ul {
-          width: 100% !important;
-          margin-bottom: 0.25em;
-          display: block;
-        }
-
-        .content-text ul li {
-          display: inline-block !important;
-          vertical-align: top;
-          color: black;
-        }
-
-        /* Widths for Label (25%) and Value (70%) */
-        .content-text ul li:first-child {
-          width: 25% !important;
-          font-weight: 600;
-        }
-
-        .content-text ul li:last-child {
-          width: 70% !important;
-        }
-
-        /* Skills and education adjustments */
-        div.content-text.skills-listing > ul > li {
-          width: 33%;
-          padding-left: 1.5em;
-        }
-
-        .work-listing p {
-          margin-bottom: 0.1em;
-        }
-
-        .big-text {
-          padding-top: 0;
-        }
-    </style>
-</head>
-<body>
-  <div class="resume-wrapper">
-    <article class="paper">
-        <header>
-          <div class="header-content">
-              <div class="header-pic">
-                <img src="./index_files/3368121" class="pic">
-              </div>
-            <div class="header-text">
-              <p>
-                Ariel Costescu
-              </p>
-              <p class="subtitle">Software Engineer</p>
-            </div>
-          </div>
-        </header>
-        <div class="content-wrapper">
-          <!-- CONTACT -->
-          <section class="content">
-            <div class="row">
-              <div class="content-cat">
-                Contact
-              </div>
-              <div class="content-text">
-                  <ul>
-                    <li>Email</li>
-                    <li>ariel.costescu+contact@gmail.com</li>
-                  </ul>
-                  <ul>
-                    <li>LinkedIn</li>
-                    <li>  
-                      <a href="https://linkedin.com/in/ariel-costescu" target="_blank">linkedin.com/in/ariel-costescu</a>
-                    </li>
-                  </ul>
-                  <ul>
-                      <li>Github</li>
-                      <li>
-                          <a href="https://github.com/ariel-costescu" target="_blank">github.com/ariel-costescu</a>
-                      </li>
-                  </ul>
-              </div>
-            </div>
-          </section>
-
-          <!-- WORK EXPERIENCE -->
-
-                <section class="content">
-                    <div class="row">
-                        <div class="content-cat big-text">
-                            Work  Experience
-                            <p>1 yr 1 mo<br/>2023 Jan<br/>2024 Jan</p>
-                        </div>
-                        <div class="content-text work-listing education-listing">
-                            <p style="margin-top:2.4em;">
-                                <strong>Senior Software Engineer</strong>
-                                at <strong>King</strong>
-                            </p>
-
-                            <p><strong><em>Overview</em></strong></p>
-                            <p>Developed backend solutions for new mobile gaming titles and migrated legacy on-prem projects to Google Cloud Platform (GCP).</p>
-
-                            <p><strong><em>Accomplishments</em></strong></p>
-                            <p>
-                                • Designed and implemented scalable backend services using Java, Spring Boot, Netty, and Protocol Buffers.<br/>
-                                • Migrated legacy on-prem applications to GCP, improving scalability and maintainability.<br/>
-                                • Developed APIs using gRPC for real-time communication.<br/>
-                                • Containerized applications using Docker and deployed with Kubernetes.
-                            </p>
-
-                            <p class="highlight"><strong><em>Skills</em></strong> Java, Spring Boot, Netty, Protocol Buffers, gRPC, Cassandra, GCP, Docker, Kubernetes,REST APIs, Cloud Computing</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="content">
-                    <div class="row">
-                        <div class="content-cat big-text">
-                            <p>1 yr<br/>2021 Jun<br/>2022 May</p>
-                        </div>
-                        <div class="content-text work-listing education-listing">
-                            <p style="margin-top:2.4em;">
-                                <strong>Senior Software Engineer</strong>
-                                at <strong>Ten Square Games</strong>
-                            </p>
-
-                            <p><strong><em>Overview</em></strong></p>
-                            <p>Backend development for mobile gaming titles, with integration of analytics and KPI tracking for market tests.</p>
-
-                            <p><strong><em>Accomplishments</em></strong></p>
-                            <p>
-                                • Built backend systems using Java, Netty, Protocol Buffers, and PostgreSQL.<br/>
-                                • Collaborated with Data Analytics and core tech teams to provide metrics for KPI measurement.<br/>
-                                • Implemented WebSocket communication for real-time game features.<br/>
-                                • Containerized and orchestrated services using Docker and Kubernetes.<br/>
-                                • Worked in both AWS and GCP cloud environments.
-                            </p>
-
-                            <p class="highlight"><strong><em>Skills</em></strong> Java, Netty, Protocol Buffers, PostgreSQL, Websocket, Docker, Kubernetes, AWS, GCP</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="content work-content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                          <p>5 yr 3 mo<br/>2014 Jun<br/>2019 Aug</p>
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p style="margin-top:2.4em;">
-                            <strong>Software Engineer</strong>
-                            at <strong>Electronic Arts:</strong>
-                        </p>
-
-                        <p><strong><em>Overview</em></strong></p>
-                        <p>Backend services for online features across console, PC, and mobile sports titles with millions of daily active users.</p>
-
-                        <p><strong><em>Accomplishments</em></strong></p>
-                        <p>
-                            • Developed and maintained online services using Java, Apache Jetty/Jersey, Protocol Buffers and MySQL.<br/>
-                            • Implemented features with end-to-end ownership, from design to deployment in live, highly available environments.<br/>
-                            • Gained experience in cloud computing (AWS) and actor model systems (Akka/Scala).<br/>
-                            • Worked on backend architecture to ensure high performance, reliability, and scalability.
-                        </p>
-
-                        <p class="highlight"><strong><em>Skills</em></strong> Java, Apache Jetty, Jersey, MySQL, Protocol Buffers, Akka, Scala, AWS, Cloud Computing, Ownership, Scalability Awareness, High-Volume System Experience</p>
-                        </div>
-                  </div>
-                </section>
-
-                <section class="content work-content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                          <p>2 yr 2 mo<br/>2012 May<br/>2014 Jun</p>
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p>
-                            <strong>Software Engineer</strong>
-                            at <strong>IBM:</strong>
-                        </p>
-
-                        <p><strong><em>Overview</em></strong></p>
-                        <p>Development and maintenance of internal IBM applications and client-facing banking/insurance services.</p>
-
-                        <p><strong><em>Accomplishments</em></strong></p>
-                        <p>
-                            • Managed build processes and internal application deployment worldwide.<br/>
-                            • Developed Java SOAP web services (JAX-WS, Websphere ODM) for insurance client projects.<br/>
-                            • Implemented banking application views using Java SWT framework.<br/>
-                            • Used Eclipse SWT, OSGI, XML, Apache Ant, Jazz SCM for development and version control.
-                        </p>
-
-                        <p class="highlight"><strong><em>Skills</em></strong> Java SE, Eclipse SWT, OSGI, Websphere Application Server, SOAP, JAX-WS, XML, Apache Ant, Jazz SCM</p>
-                    </div>
-                  </div>
-                </section>
-
-                <section class="content work-content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                          <p>1 yr 6 mo<br/>2010 Dec<br/>2012 May</p>
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p>
-                            <strong>Software Engineer</strong>
-                            at <strong>Red Point Software Solutions:</strong>
-                        </p>
-
-                        <p><strong><em>Overview</em></strong></p>
-                        <p>Developed e-learning applications with 3D graphical interfaces and automated build systems.</p>
-
-                        <p><strong><em>Accomplishments</em></strong></p>
-                        <p>
-                            • Created custom 3D GUI components (rotating menu, document explorer) using ActionScript 3 & Flex 4.5.<br/>
-                            • Maintained automated build system using Apache Maven and FlexMojos.<br/>
-                            • Researched and implemented file upload/document management via Google Docs API.<br/>
-                            • Integrated third-party components (e.g. MathML editor).<br/>
-                            • Mentored junior developers.
-                        </p>
-
-                        <p class="highlight"><strong><em>Skills</em></strong> ActionScript 3, Flex 4.5, Maven, FlexMojos, Java Servlets, 3D GUI, Build Automation</p>
-                    </div>
-                  </div>
-                </section>
-
-                <section class="content work-content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                          <p>1 yr 10 mo<br/>2009 Mar<br/>2010 Dec</p>
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p>
-                            <strong>Software Engineer</strong>
-                            at <strong>Kabinet:</strong>
-                        </p>
-
-                        <p><strong><em>Overview</em></strong></p>
-                        <p>Developed ECM, CRM and mobile trading applications using Java and ActionScript frameworks.</p>
-
-                        <p><strong><em>Accomplishments</em></strong></p>
-                        <p>
-                            • Developed ECM application for document management with version control, metadata, and workflow.<br/>
-                            • Built MVC framework for browser-based development of data-driven applications using Flex and Java EE (Spring, Hibernate, Tomcat).<br/>
-                            • Developed a CRM application in said framework and supported content management integration.<br/>
-                            • Developed a mobile Flash Lite app for trading platforms (portfolio viewing, quotes, order placement).
-                        </p>
-
-                        <p class="highlight"><strong><em>Skills</em></strong> Java EE, Spring, Hibernate, Tomcat, Flex, Actionscript 3, Mobile App Development</p>
-                    </div>
-                  </div>
-                </section>
-
-
-                <section class="content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                        Education
-                          <p>2006-10-01 to<br> 2009-10-01</p>
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p class="heading" style="margin-top:2.35em;">"Alexandru Ioan Cuza" University, Iasi, Romania</p>
-                        <p class="highlight">
-                          BSc:
-                          <i>Computer Science </i>
-                        </p>
-                    </div>
-                  </div>
-                </section>
-
-              <section class="content">
-                <div class="row">
-                  <div class="content-cat big-text">
-                      Certifications
-                      <p>Rice University</p>
-                      <p style="margin-top:0.25em;">2021-04-01</p>
-                  </div>
-                  <div class="content-text work-listing">
-                      <strong><p class="heading">Parallel, Concurrent, and Distributed Programming in Java</p></strong>
-                      <p class="highlight">
-                        <a href="https://coursera.org/verify/specialization/WHD33FDUTPHQ" target="_blank">coursera.org/verify/specialization/WHD33FDUTPHQ</a>
-                      </p>
-                  </div>
-                </div>
-              </section>
-              <section class="content">
-                <div class="row">
-                  <div class="content-cat big-text">
-                      <p>Oracle</p>
-                      <p style="margin-top:0.25em;">2013-09-01</p>
-                  </div>
-                  <div class="content-text work-listing">
-                      <strong><p class="heading">Oracle Certified Professional, Java SE 6 Programmer</p></strong>
-                      <p class="highlight">
-                        <a href="https://www.youracclaim.com/badges/7e74183a-c76c-43c4-9f6d-757434f8988b" target="_blank">youracclaim.com/badges/7e74183a-c76c-43c4-9f6d-757434f8988b</a>
-                      </p>
-                  </div>
-                </div>
-              </section>
-              <section class="content">
-                <div class="row">
-                  <div class="content-cat big-text">
-                      <p>Codility</p>
-                      <p style="margin-top:0.25em;">2013-11-01</p>
-                  </div>
-                  <div class="content-text work-listing">
-                      <strong><p class="heading">Codility Golden Certificate Omega 2013</p></strong>
-                      <p class="highlight">
-                        <a href="https://app.codility.com/cert/view/cert8N6UY9-X326QVXAFQ7Z293Q" target="_blank">app.codility.com/cert/view/cert8N6UY9-X326QVXAFQ7Z293Q</a>
-                    </p>
-                  </div>
-                </div>
-              </section>
-
-  <!-- LANGUAGE -->
-            <section class="content">
-              <div class="row">
-                <div class="content-cat">
-                  Languages
-                </div>
-                <div class="content-text">
-                    <ul>
-                        <li>English</li>
-                        <li>Fluent</li>
-                    </ul>
-                </div>
-                <div class="content-text">
-                    <ul>
-                        <li>French</li>
-                        <li>Intermediate</li>
-                    </ul>
-                </div>
-              </div>
-            </section>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3f5f7">
+    <meta
+      name="description"
+      content="Ariel Costescu, Senior Software Engineer. Experience in Java, backend systems, distributed architectures, and cloud-native delivery."
+    >
+    <meta property="og:title" content="Ariel Costescu — Senior Software Engineer">
+    <meta
+      property="og:description"
+      content="Senior software engineer focused on reliable backend systems, APIs, distributed architectures, and cloud-native delivery."
+    >
+    <meta property="og:type" content="profile">
+    <title>Ariel Costescu — Senior Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="resume">
+      <header class="resume-header">
+        <h1>Ariel Costescu</h1>
+        <p class="job-title">Senior Software Engineer</p>
+        <nav class="contact" aria-label="Contact links">
+          <a href="mailto:ariel.costescu+contact@gmail.com">ariel.costescu+contact@gmail.com</a>
+          <a href="https://linkedin.com/in/ariel-costescu">linkedin.com/in/ariel-costescu</a>
+          <a href="https://github.com/ariel-costescu">github.com/ariel-costescu</a>
+        </nav>
+      </header>
+
+      <section class="resume-section" aria-labelledby="profile-heading">
+        <h2 id="profile-heading" class="section-label">Profile</h2>
+        <div class="section-content">
+          <p>
+            Senior software engineer with 15+ years of experience building Java services and
+            large-scale applications. Focused on reliable backend systems, APIs, distributed
+            architectures, and cloud-native delivery, with additional experience building
+            user-facing applications.
+          </p>
         </div>
-    </article>
-  </div>
+      </section>
 
+      <section class="resume-section" aria-labelledby="skills-heading">
+        <h2 id="skills-heading" class="section-label">Core Skills</h2>
+        <div class="section-content skills">
+          <p><strong>Backend:</strong> Java, Spring, Spring Boot, Hibernate, REST, gRPC, Protocol Buffers</p>
+          <p><strong>Data &amp; messaging:</strong> PostgreSQL, MySQL, Cassandra, FoundationDB, Kafka, Databricks</p>
+          <p><strong>Architecture &amp; delivery:</strong> Microservices, distributed systems, event-driven systems, Temporal, Argo Workflows, Docker, Kubernetes, GCP, AWS</p>
+          <p><strong>User interfaces:</strong> React Spectrum, Flex, ActionScript 3</p>
+        </div>
+      </section>
 
-<div class="inject-journal" style="text-align: center; position: relative; z-index: 2147483647;"><div style="position: fixed; width: 0px; height: 0px; top: 0px; right: 0px;"><div style="position: fixed; inset: 0px; visibility: hidden; transform: translateX(464px); transition: transform 100ms cubic-bezier(0, 0, 0, 1) 0s, visibility 100ms ease 0s; will-change: transform, visibility;"><iframe frameborder="0" src="./index_files/inject.html" style="width: 100%; height: 100%; display: block;"></iframe></div></div></div></body></html>
+      <section class="resume-section experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading" class="section-label">Work Experience</h2>
+        <div class="section-content experience-list">
+          <article class="job">
+            <p class="job-dates">
+              <time datetime="2026-07">Jul 2026</time><span aria-hidden="true">–</span><span>Present</span>
+            </p>
+            <div class="job-details">
+              <h3>Senior Software Engineer <span>at Adobe</span></h3>
+              <p>
+                Works on Adobe Experience Platform, with ownership of services supporting identity
+                resolution.
+              </p>
+              <ul>
+                <li>
+                  Develops within a platform ecosystem spanning Java, Spring, Hibernate,
+                  PostgreSQL, FoundationDB, Databricks, Kafka, Temporal, Argo Workflows, and
+                  Kubernetes.
+                </li>
+                <li>Works with React Spectrum for user-facing platform experiences.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job">
+            <p class="job-dates">
+              <time datetime="2024">2024</time><span aria-hidden="true">–</span><time datetime="2026-06">Jun 2026</time>
+            </p>
+            <div class="job-details">
+              <h3>Independent Projects &amp; Professional Development</h3>
+              <p>
+                Worked on personal projects and focused on upskilling in AI-assisted software
+                development.
+              </p>
+            </div>
+          </article>
+
+          <article class="job">
+            <p class="job-dates">
+              <time datetime="2023-01">Jan 2023</time><span aria-hidden="true">–</span><time datetime="2024-01">Jan 2024</time>
+            </p>
+            <div class="job-details">
+              <h3>Senior Software Engineer <span>at King</span></h3>
+              <p>
+                Built backend solutions for new mobile game titles and migrated legacy on-premises
+                projects to Google Cloud Platform.
+              </p>
+              <ul>
+                <li>Designed scalable services using Java, Spring Boot, Netty, and Protocol Buffers; developed real-time APIs with gRPC.</li>
+                <li>Migrated legacy applications to GCP and containerized services with Docker and Kubernetes.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job">
+            <p class="job-dates">
+              <time datetime="2021-06">Jun 2021</time><span aria-hidden="true">–</span><time datetime="2022-05">May 2022</time>
+            </p>
+            <div class="job-details">
+              <h3>Senior Software Engineer <span>at Ten Square Games</span></h3>
+              <p>
+                Developed backend systems for mobile games and collaborated with analytics teams
+                on KPI measurement.
+              </p>
+              <ul>
+                <li>Built Java services with Netty, Protocol Buffers, and PostgreSQL; implemented WebSocket features.</li>
+                <li>Deployed containerized services with Docker and Kubernetes across AWS and GCP environments.</li>
+              </ul>
+            </div>
+          </article>
+
+          <div class="print-page-header" aria-hidden="true">
+            <p class="print-name">Ariel Costescu</p>
+            <p class="print-title">Senior Software Engineer</p>
+            <p class="continuation-label">Experience (continued)</p>
+          </div>
+
+          <article class="job">
+            <p class="job-dates">
+              <time datetime="2014-06">Jun 2014</time><span aria-hidden="true">–</span><time datetime="2019-08">Aug 2019</time>
+            </p>
+            <div class="job-details">
+              <h3>Software Engineer <span>at Electronic Arts</span></h3>
+              <p>
+                Built online services for console, PC, and mobile sports titles serving millions
+                of daily active users.
+              </p>
+              <ul>
+                <li>Developed Java services using Apache Jetty/Jersey, Protocol Buffers, and MySQL.</li>
+                <li>Owned features end to end, from design through deployment in highly available live environments.</li>
+                <li>Worked with AWS and actor-model systems including Akka/Scala; contributed to high-performance, scalable backend architecture.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job">
+            <p class="job-dates">
+              <time datetime="2012-05">May 2012</time><span aria-hidden="true">–</span><time datetime="2014-06">Jun 2014</time>
+            </p>
+            <div class="job-details">
+              <h3>Software Engineer <span>at IBM</span></h3>
+              <p>Developed internal applications and client-facing banking and insurance services.</p>
+              <ul>
+                <li>Built Java SOAP web services with JAX-WS and WebSphere ODM for insurance projects.</li>
+                <li>Managed build processes and worldwide application deployments; developed banking views with Java SWT.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job">
+            <p class="job-dates">
+              <time datetime="2010-12">Dec 2010</time><span aria-hidden="true">–</span><time datetime="2012-05">May 2012</time>
+            </p>
+            <div class="job-details">
+              <h3>Software Engineer <span>at Red Point Software Solutions</span></h3>
+              <p>Developed e-learning applications with 3D graphical interfaces and automated builds.</p>
+              <ul>
+                <li>Created custom interfaces using ActionScript 3 and Flex; maintained Maven/FlexMojos build automation.</li>
+                <li>Integrated the Google Docs API and third-party components; mentored junior developers.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job">
+            <p class="job-dates">
+              <time datetime="2009-03">Mar 2009</time><span aria-hidden="true">–</span><time datetime="2010-12">Dec 2010</time>
+            </p>
+            <div class="job-details">
+              <h3>Software Engineer <span>at Kabinet</span></h3>
+              <p>Built ECM, CRM, and mobile trading applications using Java and ActionScript frameworks.</p>
+              <ul>
+                <li>Developed document-management and CRM applications with metadata, version control, workflows, and content-management integration.</li>
+                <li>Built a browser-based application framework with Flex and Java EE (Spring, Hibernate, Tomcat), plus a mobile trading application.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="resume-section" aria-labelledby="education-heading">
+        <h2 id="education-heading" class="section-label">Education</h2>
+        <div class="section-content">
+          <h3 class="plain-heading">"Alexandru Ioan Cuza" University, Iasi, Romania</h3>
+          <p>BSc, Computer Science</p>
+        </div>
+      </section>
+
+      <section class="resume-section" aria-labelledby="certifications-heading">
+        <h2 id="certifications-heading" class="section-label">Certifications</h2>
+        <div class="section-content">
+          <ul class="compact-list">
+            <li>Parallel, Concurrent, and Distributed Programming in Java — Rice University / Coursera</li>
+            <li>Oracle Certified Professional, Java SE 6 Programmer</li>
+            <li>Codility Golden Certificate Omega 2013</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section" aria-labelledby="languages-heading">
+        <h2 id="languages-heading" class="section-label">Languages</h2>
+        <div class="section-content language-list">
+          <p><strong>English</strong> Fluent</p>
+          <p><strong>French</strong> Intermediate</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
